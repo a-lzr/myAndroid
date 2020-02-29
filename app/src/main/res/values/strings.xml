@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyAndroid</string>
+    <string name="my_first_application">My first application</string>
+    <string name="lesson1">Lesson1</string>
+    <string name="lesson2">Lesson2</string>
+    <string name="lesson3">Lesson3</string>
+</resources>
