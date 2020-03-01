@@ -4,4 +4,6 @@
     <string name="lesson1">Lesson1</string>
     <string name="lesson2">Lesson2</string>
     <string name="lesson3">Lesson3</string>
+    <string name="show_flags">Show Flags</string>
+    <string name="show_animation">Show Animation</string>
 </resources>
