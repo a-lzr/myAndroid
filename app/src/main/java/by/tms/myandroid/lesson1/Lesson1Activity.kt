@@ -1,7 +1,8 @@
-package by.tms.myandroid
+package by.tms.myandroid.lesson1
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import by.tms.myandroid.R
 
 class Lesson1Activity : AppCompatActivity() {
 

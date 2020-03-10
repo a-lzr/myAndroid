@@ -1,8 +1,9 @@
-package by.tms.myandroid
+package by.tms.myandroid.lesson2
 
 import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.appcompat.app.AppCompatActivity
+import by.tms.myandroid.R
 import kotlinx.android.synthetic.main.activity_lesson2_animation.*
 
 class Lesson2AnimationActivity : AppCompatActivity() {

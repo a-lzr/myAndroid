@@ -6,4 +6,12 @@
     <string name="lesson3">Lesson3</string>
     <string name="show_flags">Show Flags</string>
     <string name="show_animation">Show Animation</string>
+    <string name="lesson3_confirmed">Confirmed</string>
+    <string name="lesson3_recovered">Recovered</string>
+    <string name="lesson3_dead">Dead</string>
+    <string name="lesson3_refresh_data">Refresh Data</string>
+    <string name="lesson3_add_confirmed">+ 1 confirmed</string>
+    <string name="lesson3_add_recovered">+ 1 recovered</string>
+    <string name="lesson3_add_dead">+ 1 dead</string>
+    <string name="lesson3_count_default">0</string>
 </resources>

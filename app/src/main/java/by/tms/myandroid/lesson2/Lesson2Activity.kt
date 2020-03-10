@@ -1,10 +1,10 @@
-package by.tms.myandroid
+package by.tms.myandroid.lesson2
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import by.tms.myandroid.R
 import kotlinx.android.synthetic.main.activity_lesson2.*
-import kotlinx.android.synthetic.main.activity_main.*
 
 class Lesson2Activity : AppCompatActivity() {
 
