@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".lesson4.Lesson4AddActivity"></activity>
+        <activity android:name=".lesson4.Lesson4InfoActivity" />
         <activity android:name=".lesson1.Lesson1Activity" />
         <activity android:name=".lesson2.Lesson2Activity" />
         <activity android:name=".lesson2.Lesson2FlagsActivity" />
         <activity android:name=".lesson2.Lesson2AnimationActivity" />
-        <activity android:name=".lesson3.Lesson3Activity"/>
+        <activity android:name=".lesson3.Lesson3Activity" />
+        <activity android:name=".lesson4.Lesson4Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

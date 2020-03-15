@@ -7,6 +7,7 @@ import android.view.View
 import by.tms.myandroid.lesson1.Lesson1Activity
 import by.tms.myandroid.lesson2.Lesson2Activity
 import by.tms.myandroid.lesson3.Lesson3Activity
+import by.tms.myandroid.lesson4.Lesson4Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -32,11 +33,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
             startLesson3.id -> {
-                val intent = Intent(this, Lesson2Activity::class.java)
+                val intent = Intent(this, Lesson3Activity::class.java)
                 startActivity(intent)
             }
             startLesson4.id -> {
-                val intent = Intent(this, Lesson3Activity::class.java)
+                val intent = Intent(this, Lesson4Activity::class.java)
                 startActivity(intent)
             }
         }

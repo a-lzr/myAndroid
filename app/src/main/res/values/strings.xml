@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">MyAndroid</string>
     <string name="my_first_application">My first application</string>
-    <string name="lesson1">Lesson1</string>
-    <string name="lesson2">Lesson2</string>
-    <string name="lesson3">Lesson3</string>
-    <string name="lesson4">Lesson3</string>
+    <string name="lesson1">Lesson 1</string>
+    <string name="lesson2">Lesson 2</string>
+    <string name="lesson3">Lesson 3</string>
+    <string name="lesson4">Lesson 4</string>
     <string name="show_flags">Show Flags</string>
     <string name="show_animation">Show Animation</string>
     <string name="lesson3_confirmed">Confirmed</string>
@@ -15,4 +15,19 @@
     <string name="lesson3_add_recovered">+ 1 recovered</string>
     <string name="lesson3_add_dead">+ 1 dead</string>
     <string name="lesson3_count_default">0</string>
+
+    <string name="lesson4_add_top">Add top</string>
+    <string name="lesson4_add_bottom">Add Bottom</string>
+    <string name="lesson4_add_flower">Add Flower</string>
+    <string name="lesson4_remove_top">Remove top</string>
+    <string name="lesson4_remove_bottom">Remove bottom</string>
+    <string name="lesson4_url_image">URL Image</string>
+    <string name="lesson4_name">Name</string>
+    <string name="lesson4_add">ADD</string>
+    <string name="lesson4_price">Price</string>
+    <string name="lesson4_add_complete">Add complete</string>
+    <string name="lesson4_add_failed">Add failed</string>
+    <string name="lesson4_add_fragment_failed">Flower is not add</string>
+    <string name="lesson4_delete_fragment_failed">Fragment is not add</string>
+    <string name="lesson4_count">Count:</string>
 </resources>
