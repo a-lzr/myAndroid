@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyAndroid</string>
+    <string name="my_first_application">Мое первое приложение</string>
+    <string name="lesson1">Урок 1</string>
+    <string name="lesson2">Урок 2</string>
+    <string name="lesson3">Урок 3</string>
+    <string name="lesson4">Урок 4</string>
+    <string name="show_flags">Флаги</string>
+    <string name="show_animation">Аннимация</string>
+    <string name="lesson3_confirmed">Confirmed</string>
+    <string name="lesson3_recovered">Recovered</string>
+    <string name="lesson3_dead">Dead</string>
+    <string name="lesson3_refresh_data">Refresh Data</string>
+    <string name="lesson3_add_confirmed">+ 1 confirmed</string>
+    <string name="lesson3_add_recovered">+ 1 recovered</string>
+    <string name="lesson3_add_dead">+ 1 dead</string>
+    <string name="lesson3_count_default">0</string>
+    <string name="lesson4_add_top">Добавить сверху</string>
+    <string name="lesson4_add_bottom">Добавить снизу</string>
+    <string name="lesson4_add_flower">Добавить цветок</string>
+    <string name="lesson4_remove_top">Удалить сверху</string>
+    <string name="lesson4_remove_bottom">Удалить снизу</string>
+    <string name="lesson4_url_image">Ссылка на картинку</string>
+    <string name="lesson4_name">Название</string>
+    <string name="lesson4_add">Добавить</string>
+    <string name="lesson4_price">Стоимость</string>
+    <string name="lesson4_add_complete">Добавление завершено</string>
+    <string name="lesson4_add_failed">Добавление невозможно</string>
+    <string name="lesson4_add_fragment_failed">Цветок еще не добавлен</string>
+    <string name="lesson4_delete_fragment_failed">>Фрагмент еще не добавлен</string>
+    <string name="lesson4_count">Кол-во:</string>
+</resources>
