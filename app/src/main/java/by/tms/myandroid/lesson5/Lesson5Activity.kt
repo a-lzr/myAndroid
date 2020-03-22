@@ -1,6 +1,5 @@
 package by.tms.myandroid.lesson5
 
-import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,11 +11,7 @@ class Lesson5Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
-            setContentView(R.layout.activity_lesson5_landscape)
-        else
-            setContentView(R.layout.activity_lesson5)
+        setContentView(R.layout.activity_lesson5)
 
         Lesson5ProductCollection.instance.initCollection()
 
