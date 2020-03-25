@@ -5,6 +5,7 @@
     <string name="lesson2">Урок 2</string>
     <string name="lesson3">Урок 3</string>
     <string name="lesson4">Урок 4</string>
+    <string name="lesson5">Урок 5</string>
     <string name="show_flags">Флаги</string>
     <string name="show_animation">Аннимация</string>
     <string name="lesson3_confirmed">Confirmed</string>
@@ -29,4 +30,7 @@
     <string name="lesson4_add_fragment_failed">Цветок еще не добавлен</string>
     <string name="lesson4_delete_fragment_failed">>Фрагмент еще не добавлен</string>
     <string name="lesson4_count">Кол-во:</string>
+    <string name="lesson5_title">Список продуктов:</string>
+    <string name="lesson5_name">Название</string>
+    <string name="lesson5_price">Стоимость</string>
 </resources>

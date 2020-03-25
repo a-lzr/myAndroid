@@ -5,6 +5,7 @@
     <string name="lesson2">Lesson 2</string>
     <string name="lesson3">Lesson 3</string>
     <string name="lesson4">Lesson 4</string>
+    <string name="lesson5">Lesson 5</string>
     <string name="show_flags">Show Flags</string>
     <string name="show_animation">Show Animation</string>
     <string name="lesson3_confirmed">Confirmed</string>
@@ -15,7 +16,6 @@
     <string name="lesson3_add_recovered">+ 1 recovered</string>
     <string name="lesson3_add_dead">+ 1 dead</string>
     <string name="lesson3_count_default">0</string>
-
     <string name="lesson4_add_top">Add top</string>
     <string name="lesson4_add_bottom">Add Bottom</string>
     <string name="lesson4_add_flower">Add Flower</string>
@@ -30,4 +30,7 @@
     <string name="lesson4_add_fragment_failed">Flower is not add</string>
     <string name="lesson4_delete_fragment_failed">Fragment is not add</string>
     <string name="lesson4_count">Count:</string>
+    <string name="lesson5_title">List of products:</string>
+    <string name="lesson5_name">Name</string>
+    <string name="lesson5_price">Price</string>
 </resources>
