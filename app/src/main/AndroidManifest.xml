@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".lesson5.Lesson5InfoActivity"></activity>
+        <activity android:name=".lesson7.Lesson7Activity"></activity>
+        <activity android:name=".lesson6.Lesson6Activity" />
+        <activity android:name=".lesson5.Lesson5InfoActivity" />
         <activity android:name=".lesson5.Lesson5Activity" />
         <activity android:name=".lesson4.Lesson4AddActivity" />
         <activity android:name=".lesson4.Lesson4InfoActivity" />

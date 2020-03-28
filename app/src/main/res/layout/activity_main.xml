@@ -40,6 +40,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lesson5" />
+
+        <Button
+            android:id="@+id/startLesson6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson6" />
+
+        <Button
+            android:id="@+id/startLesson7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson7" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
