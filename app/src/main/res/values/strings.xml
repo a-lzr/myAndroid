@@ -35,4 +35,7 @@
     <string name="lesson5_title">List of products:</string>
     <string name="lesson5_name">Name</string>
     <string name="lesson5_price">Price</string>
+    <string name="lesson6_read">Read</string>
+    <string name="lesson6_write">Write</string>
+    <string name="lesson6_clear">Clear</string>
 </resources>

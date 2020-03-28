@@ -6,4 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".lesson6.Lesson6Activity">
 
+    <EditText
+        android:id="@+id/editTextLesson6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <Button
+        android:id="@+id/readBtnLesson6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lesson6_read"
+        app:layout_constraintStart_toStartOf="@+id/editTextLesson6"
+        app:layout_constraintTop_toBottomOf="@id/editTextLesson6" />
+
+    <Button
+        android:id="@+id/writeBtnLesson6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lesson6_write"
+        app:layout_constraintEnd_toStartOf="@+id/clearBtnLesson6"
+        app:layout_constraintStart_toEndOf="@+id/readBtnLesson6"
+        app:layout_constraintTop_toBottomOf="@id/editTextLesson6" />
+
+    <Button
+        android:id="@+id/clearBtnLesson6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/lesson6_clear"
+        app:layout_constraintEnd_toEndOf="@+id/editTextLesson6"
+        app:layout_constraintTop_toBottomOf="@id/editTextLesson6" />
+
+    <TextView
+        android:id="@+id/textViewLesson6"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="@+id/clearBtnLesson6"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/readBtnLesson6"
+        app:layout_constraintTop_toBottomOf="@+id/writeBtnLesson6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
