@@ -17,7 +17,6 @@ class Lesson4Activity : AppCompatActivity(), View.OnClickListener {
     private var fragmentBottom: Lesson4Fragment? = null
     private val instance = Lesson4Collection.instance
 
-    @Override
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lesson4)
@@ -50,13 +49,11 @@ class Lesson4Activity : AppCompatActivity(), View.OnClickListener {
             fragmentBottom = setFragment(R.id.bottomFragmentLesson4, 1)
     }
 
-    @Override
     override fun onResume() {
         super.onResume()
         updateCount()
     }
 
-    @Override
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.addTopFragmentLesson4 -> {

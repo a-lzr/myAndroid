@@ -15,7 +15,6 @@ class Lesson4Fragment : Fragment() {
     var price: Double? = null
     var url: String? = null
 
-    @Override
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -24,7 +23,6 @@ class Lesson4Fragment : Fragment() {
         return inflater.inflate(R.layout.fragment_lesson4, container, false)
     }
 
-    @Override
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 

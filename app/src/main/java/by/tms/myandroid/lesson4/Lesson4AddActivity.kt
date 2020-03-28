@@ -9,7 +9,6 @@ import kotlinx.android.synthetic.main.activity_lesson4_add.*
 
 class Lesson4AddActivity : AppCompatActivity(), View.OnClickListener {
 
-    @Override
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lesson4_add)
@@ -17,7 +16,6 @@ class Lesson4AddActivity : AppCompatActivity(), View.OnClickListener {
         addFlowerToListLesson4.setOnClickListener(this)
     }
 
-    @Override
     override fun onClick(view: View?) {
         when (view?.id) {
             addFlowerToListLesson4.id -> {
