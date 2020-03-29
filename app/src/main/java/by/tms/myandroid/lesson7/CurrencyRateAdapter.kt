@@ -1,13 +1,13 @@
 package by.tms.myandroid.lesson7
 
 import android.annotation.SuppressLint
-import android.graphics.Color
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import by.tms.myandroid.R
 import com.squareup.picasso.Picasso
@@ -35,7 +35,7 @@ class CurrencyRateAdapter :
         with(CurrencyRateCollection.instance.collection[position]) {
             itemView.codeCurrencyLesson7.text =
                 "$Cur_Scale $Cur_Abbreviation = $Cur_OfficialRate BYN"
-            itemView.nameCurrencyLesson7.text = Cur_Name
+            itemView.nameCurrencyLesson7.text = Cur_ID.toString() // Cur_Name
             with(CurrencyRateCollection.instance.collectionLastDay) {
                 if (size > position)
                     updateRateView(
@@ -72,11 +72,11 @@ class CurrencyRateAdapter :
                 .into(itemView.imageCurrencyLesson7)
         }
 
-//        itemView.setOnClickListener() {
-//            Toast.makeText(holder.itemView.context,
-//                list.get(position).name,
-//                Toast.LENGTH_SHORT).show()
-//        }
+        itemView.setOnClickListener() {
+            CurrencyRateCollection.instance.position = position
+            val intent = Intent(it.context, Lesson7DetailsActivity::class.java)
+            it.context.startActivity(intent)
+        }
     }
 
     @SuppressLint("SetTextI18n")

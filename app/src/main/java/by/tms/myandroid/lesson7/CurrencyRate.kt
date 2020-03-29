@@ -8,3 +8,9 @@ data class CurrencyRateItem(
     val Cur_Scale: Int,
     val Date: String
 )
+
+data class CurrencyDynamicItem(
+    val Cur_ID: Int,
+    val Cur_OfficialRate: Double,
+    val Date: String
+)

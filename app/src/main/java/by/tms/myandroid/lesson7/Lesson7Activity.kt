@@ -26,13 +26,12 @@ class Lesson7Activity : AppCompatActivity() {
         setContentView(R.layout.activity_lesson7)
 
         val instance = CurrencyRateCollection.instance
-        var date: Date? = null
 
         CoroutineScope(Dispatchers.IO).launch {
             val response = getCurrencyRates("")
             if (response.isSuccessful) {
                 response.body()?.let { it1 -> instance.collection.addAll(it1) }
-                date = SimpleDateFormat("yyyy-mm-dd").parse(instance.collection[0].Date)
+                instance.date = SimpleDateFormat("yyyy-mm-dd").parse(instance.collection[0].Date)
                 sort(instance.collection)
 
                 withContext(Dispatchers.Main) {
@@ -40,7 +39,7 @@ class Lesson7Activity : AppCompatActivity() {
                     recyclerViewLesson7.layoutManager =
                         LinearLayoutManager(recyclerViewLesson7.context)
                     recyclerViewLesson7.setHasFixedSize(true)
-                    dateLesson7.text = SimpleDateFormat("dd.mm.yyyy").format(date!!)
+                    dateLesson7.text = SimpleDateFormat("dd.mm.yyyy").format(instance.date!!)
                 }
             } else {
                 Log.e("ERROR", response.code().toString())
@@ -48,9 +47,9 @@ class Lesson7Activity : AppCompatActivity() {
         }
 
         CoroutineScope(Dispatchers.IO).launch {
-            while (date == null) {} // ожидание выполнения первого корутина
+            while (instance.date == null) {} // ожидание получения даты первым корутином
             val calendar = Calendar.getInstance()
-            calendar.time = date!!
+            calendar.time = instance.date!!
             calendar.add(Calendar.DAY_OF_YEAR, -1)
 
             val response = getCurrencyRates(SimpleDateFormat("yyyy-mm-dd").format(calendar.time))
@@ -67,9 +66,9 @@ class Lesson7Activity : AppCompatActivity() {
         }
 
         CoroutineScope(Dispatchers.IO).launch {
-            while (date == null) {} // ожидание выполнения первого корутина
+            while (instance.date == null) {} // ожидание получения даты первым корутином
             val calendar = Calendar.getInstance()
-            calendar.time = date!!
+            calendar.time = instance.date!!
             calendar.add(Calendar.DAY_OF_YEAR, -7)
 
             val response = getCurrencyRates(SimpleDateFormat("yyyy-mm-dd").format(calendar.time))

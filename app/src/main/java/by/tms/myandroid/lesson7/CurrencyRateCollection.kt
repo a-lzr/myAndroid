@@ -1,19 +1,16 @@
 package by.tms.myandroid.lesson7
 
-data class CurrencyRate(
-    val Cur_Abbreviation: String,
-    val Cur_ID: Int,
-    val Cur_Name: String,
-    val Cur_OfficialRate: Double,
-    val Cur_Scale: Int,
-    val Date: String,
-    var Last_OfficialRate: Double?
-)
+import java.util.*
+import kotlin.Comparator
+import kotlin.collections.ArrayList
 
 class CurrencyRateCollection {
     val collection = ArrayList<CurrencyRateItem>()
     val collectionLastDay = ArrayList<CurrencyRateItem>()
     val collectionLastWeek = ArrayList<CurrencyRateItem>()
+    val collectionDynamics = ArrayList<CurrencyDynamicItem>()
+    var date: Date? = null
+    var position = 0
 
     companion object {
         val instance by lazy { CurrencyRateCollection() }
