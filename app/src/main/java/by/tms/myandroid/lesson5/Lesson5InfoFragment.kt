@@ -19,7 +19,6 @@ class Lesson5InfoFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_lesson5_info, container, false)
     }
 
-    @Override
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
