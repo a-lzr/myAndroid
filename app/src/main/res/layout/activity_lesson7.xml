@@ -6,4 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".lesson7.Lesson7Activity">
 
+    <TextView
+        android:id="@+id/titleLesson7"
+        android:background="@color/colorAccent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lesson7_currency_rate_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateLesson7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titleLesson7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLesson7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleLesson7" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

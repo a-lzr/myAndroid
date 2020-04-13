@@ -18,7 +18,6 @@ class Lesson6Activity : AppCompatActivity(), View.OnClickListener {
 
         writeBtnLesson6.setOnClickListener(this)
         readBtnLesson6.setOnClickListener(this)
-        clearBtnLesson6.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
