@@ -8,10 +8,12 @@ import android.location.LocationListener
 import android.location.LocationManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.EditText
-import android.widget.Toast
+import android.view.Menu
+import android.view.View
+import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.MenuItemCompat
 import by.tms.myandroid.R
 
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -28,6 +30,7 @@ class Lesson8Activity : AppCompatActivity(),
     OnMapReadyCallback,
     GoogleMap.OnMyLocationButtonClickListener,
     GoogleMap.OnMyLocationClickListener,
+    AdapterView.OnItemSelectedListener,
     LocationListener {
 
     private lateinit var mMap: GoogleMap
@@ -174,5 +177,36 @@ class Lesson8Activity : AppCompatActivity(),
                         .title(editText.text.toString())
                 )
             }.show()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_lesson8_action_bar, menu)
+
+        val item = menu?.findItem(R.id.spinner)
+        val spinner = MenuItemCompat.getActionView(item) as Spinner
+
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.mapTypesNames, android.R.layout.simple_spinner_item
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
+        spinner.onItemSelectedListener = this
+
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        val mapTypes = resources.getStringArray(R.array.mapTypesNames);
+        for (i in mapTypes.indices) {
+            if (mapTypes[i] == parent?.getItemAtPosition(position).toString())
+                mMap.mapType = i
+        }
+        Toast.makeText(this, parent?.getItemAtPosition(position).toString(), Toast.LENGTH_LONG)
+            .show()
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

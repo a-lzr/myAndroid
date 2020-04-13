@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="mapTypesNames">
+        <item>@string/lesson8_type_none</item>
+        <item>@string/lesson8_type_normal</item>
+        <item>@string/lesson8_type_satellite</item>
+        <item>@string/lesson8_type_terrain</item>
+        <item>@string/lesson8_type_hybrid</item>
+    </array>
+</resources>
