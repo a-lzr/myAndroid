@@ -8,6 +8,7 @@
     <string name="lesson5">Lesson 5</string>
     <string name="lesson6">Lesson 6</string>
     <string name="lesson7">Lesson 7</string>
+    <string name="lesson8">Lesson 8</string>
     <string name="show_flags">Show Flags</string>
     <string name="show_animation">Show Animation</string>
     <string name="lesson3_confirmed">Confirmed</string>
@@ -37,4 +38,8 @@
     <string name="lesson5_price">Price</string>
     <string name="lesson6_read">Read</string>
     <string name="lesson6_write">Write</string>
+<<<<<<< Updated upstream
+=======
+    <string name="lesson7_currency_rate_title">Currency Rates</string>
+>>>>>>> Stashed changes
 </resources>

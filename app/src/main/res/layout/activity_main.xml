@@ -52,6 +52,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/lesson7" />
+
+        <Button
+            android:id="@+id/startLesson8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lesson8" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
