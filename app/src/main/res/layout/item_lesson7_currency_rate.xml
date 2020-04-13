@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/item">
+
+    <ImageView
+        android:id="@+id/imageCurrencyLesson7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/codeCurrencyLesson7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageCurrencyLesson7"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imageCurrencyLesson7" />
+
+    <TextView
+        android:id="@+id/rateLastDayCurrencyLesson7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageCurrencyLesson7"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/imageCurrencyLesson7" />
+
+    <TextView
+        android:id="@+id/rateLastWeekCurrencyLesson7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageCurrencyLesson7"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/rateLastDayCurrencyLesson7" />
+
+    <TextView
+        android:id="@+id/nameCurrencyLesson7"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignTop="@+id/codeCurrencyLesson7"
+        android:layout_alignBottom="@+id/rateLastDayCurrencyLesson7"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/codeCurrencyLesson7"
+        android:textAlignment="viewEnd" />
+
+</RelativeLayout>
