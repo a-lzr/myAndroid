@@ -13,14 +13,14 @@ const val BASE_URL = "http://www.nbrb.by/api/"
 object CurrencyAPIFactory {
 
     private val httpClient = OkHttpClient.Builder()
-        .addInterceptor(object : Interceptor {
+/*        .addInterceptor(object : Interceptor {
             override fun intercept(chain: Interceptor.Chain): Response {
                 val request = chain.request()
                     .newBuilder()
                     .build()
                 return chain.proceed(request)
             }
-        })
+        }) */
 
     fun getRetrofitRates(): NbrbAPI {
         val retrofit = Retrofit.Builder()
