@@ -40,4 +40,9 @@
     <string name="lesson6_write">Сохранить</string>
     <string name="lesson7_currency_rate_title">Курс валют</string>
     <string name="lesson8_activity_title">Карта</string>
+    <string name="lesson8_type_none">None</string>
+    <string name="lesson8_type_normal">Normal</string>
+    <string name="lesson8_type_satellite">Satellite</string>
+    <string name="lesson8_type_terrain">Terrain</string>
+    <string name="lesson8_type_hybrid">Hybrid</string>
 </resources>
