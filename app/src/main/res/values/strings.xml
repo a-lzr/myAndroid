@@ -39,4 +39,5 @@
     <string name="lesson6_read">Read</string>
     <string name="lesson6_write">Write</string>
     <string name="lesson7_currency_rate_title">Currency Rates</string>
+    <string name="lesson8_activity_title">Map</string>
 </resources>

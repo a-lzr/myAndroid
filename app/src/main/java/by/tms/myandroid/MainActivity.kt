@@ -11,6 +11,7 @@ import by.tms.myandroid.lesson4.Lesson4Activity
 import by.tms.myandroid.lesson5.Lesson5Activity
 import by.tms.myandroid.lesson6.Lesson6Activity
 import by.tms.myandroid.lesson7.Lesson7Activity
+import by.tms.myandroid.lesson8.Lesson8Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         startLesson5.setOnClickListener(this)
         startLesson6.setOnClickListener(this)
         startLesson7.setOnClickListener(this)
+        startLesson8.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -56,6 +58,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             startLesson7.id -> {
                 val intent = Intent(this, Lesson7Activity::class.java)
+                startActivity(intent)
+            }
+            startLesson8.id -> {
+                val intent = Intent(this, Lesson8Activity::class.java)
                 startActivity(intent)
             }
         }
